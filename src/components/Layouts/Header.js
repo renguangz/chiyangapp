@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { HeaderLastItem } from '../common/HeaderLastItem';
-import { Container } from '../common/StyledComponents';
+import { Container } from '../common/Container';
 import Logo from '../images/logo.png';
 
 const HeaderContainer = styled.div`
