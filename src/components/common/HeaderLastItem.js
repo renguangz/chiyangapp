@@ -17,7 +17,7 @@ export const HeaderLastItem = () => {
     return (
         <ItemContainer>
             <LastItem style={{ fontSize: '20px' }}>
-                繁
+                <span>繁</span>
             </LastItem>
             <LastItem>
                 <SearchOutlined style={{ fontSize: '23px' }} />

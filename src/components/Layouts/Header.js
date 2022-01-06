@@ -33,7 +33,7 @@ const TitleContainer = styled.div`
     align-items: center;
 `;
 
-const StyledTitle = styled.p`
+const StyledTitle = styled.div`
     font-family: Times;
     font-weight: 400;
     font-size: 20px;
@@ -79,8 +79,8 @@ const Header = () => {
             <Container>
                 <TitleItemContainer>
                     {
-                        leftHeaderTitles.map(item => (
-                            <TitleContainer>
+                        leftHeaderTitles.map((item, index) => (
+                            <TitleContainer key={index}>
                                 <StyledTitle>{item}</StyledTitle>
                             </TitleContainer>
                         ))
@@ -94,8 +94,8 @@ const Header = () => {
                 </MenuContainer>
                 <TitleItemContainer>
                     {
-                        rightHeaderTitles.map(item => (
-                            <TitleContainer style={{ justifyContent: 'end' }}>
+                        rightHeaderTitles.map((item, index) => (
+                            <TitleContainer key={index} style={{ justifyContent: 'end' }}>
                                 <StyledTitle>{item}</StyledTitle>
                             </TitleContainer>
                         ))
