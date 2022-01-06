@@ -8,6 +8,8 @@ import PhoneIcon from '../images/PhoneIcon.png';
 import PrinterIcon from '../images/PrinterIcon.png';
 import MailIcon from '../images/MailIcon.png';
 import LocationIcon from '../images/LocationIcon.png';
+import LineIcon from '../images/LineIcon.png';
+import YoutubeIcon from '../images/YoutubeIcon.png';
 
 const FooterContainer = styled.div`
     /* border: 1px solid green; */
@@ -18,34 +20,62 @@ const FooterContainer = styled.div`
     position: absolute;
     bottom: 0;
     margin: 0;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid orange; */
+        height: 470px;
+    }
 `;
 
 const FooterColContainer = styled(Container)`
     /* border: 2px solid yellow; */
-    /* display: flex; */
     width: 90%;
     height: 315px;
-    /* margin: 0 85px; */
     margin-top: 85px;
+    align-items: flex-start;
+    @media screen and (max-width: 800px) {
+        margin: 0 36px;
+        height: 330px;
+        margin-top: 50px;
+        margin-bottom: 90px;
+        display: block;
+    }
 `;
 
 const SideCol = styled.div`
     /* border: 2px solid red; */
     flex: 1;
-    height: 100%;
-    /* margin-right: 47px; */
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid orange; */
+        max-width: 310px;
+        margin: 0 auto;
+        margin-bottom: 58px;
+    }
+`;
+
+const RightSideCol = styled(SideCol)`
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;
 
 const LogoItem = styled.img`
     width: 240px;
     height: 36px;
     display: flex;
-
+    @media screen and (max-width: 800px) {
+        width: 160px;
+        height: 24px;
+    }
 `;
 
 const CopyRightContainer = styled.div`
     width: 235px;
     margin-top: 11px;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid black; */
+        width: 100%;
+        margin-top: 6px;
+    }
 `;
 
 const CopyRight = styled.p`
@@ -61,6 +91,10 @@ const LeftIconsContainer = styled.div`
     /* border: 2px solid pink; */
     display: flex;
     margin-top: 17px;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        margin-top: 9px;
+    }
 `;
 
 const LeftIcon = styled.img`
@@ -69,18 +103,28 @@ const LeftIcon = styled.img`
     margin-right: 20px;
 `;
 
+const RwdIcon = styled(LeftIcon)`
+    display: none;
+    @media screen and (max-width: 800px) {
+        display: inline-block;
+    }
+`;
+
 const MainCol = styled.div`
     /* border: 2px solid purple; */
     display: flex;
     flex: 2;
-    height: 100%;
     justify-content: space-around;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid purple; */
+        max-width: 340px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
 `;
 
 const LeftMainContainer = styled.div`
     /* border: 2px solid green; */
-    /* margin: 0 47px; */
-    /* flex: 1; */
     height: 100%;
 `;
 
@@ -88,14 +132,31 @@ const MainTitle = styled.h3`
     font-family: Roboto;
     font-weight: 700;
     font-size: 22px;
-    line-height: 26px;
+    line-height: 16px;
     margin: 0;
     text-align: start;
+    @media screen and (max-width: 800px) {
+        font-size: 16px;
+    }
+`;
+
+const MainTitleBorder = styled.div`
+    display: none;
+    @media screen and (max-width: 800px) {
+        display: block;
+        border-bottom: 2px solid black;
+        margin-top: 7px;
+        width: 88px;
+    }
 `;
 
 const SubContainer = styled.div`
     /* border: 2px solid red; */
     margin-top: 20px;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid red; */
+        margin-top: 12px;
+    }
 `;
 
 const SubTitle = styled.a`
@@ -105,12 +166,16 @@ const SubTitle = styled.a`
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 18px;
-    /* line-height: 0; */
     text-align: start;
     cursor: pointer;
     margin-top: 0;
     margin-bottom: 12px;
     text-decoration: none;
+    @media screen and (max-width: 800px) {
+        line-height:16px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
 `;
 const SubTitleMargin = styled(SubTitle)`
     margin-right: 70px;
@@ -129,7 +194,6 @@ const RightMainSubContainer = styled.div`
 const IconSubContainer = styled.div`
     /* border: 2px solid blue; */
     display: flex;
-    /* align-items: center; */
 `;
 
 const RightIcon = styled.img`
@@ -174,6 +238,8 @@ const Footer = () => {
                     <LeftIconsContainer>
                         <LeftIcon src={FBIcon} alt='fb' />
                         <LeftIcon src={IGIcon} alt='ig' />
+                        <RwdIcon src={LineIcon} alt='line' />
+                        <RwdIcon src={YoutubeIcon} alt='youtube' />
                     </LeftIconsContainer>
                 </SideCol>
                 <MainCol>
@@ -181,6 +247,7 @@ const Footer = () => {
                         <MainTitle>
                             Information
                         </MainTitle>
+                        <MainTitleBorder />
                         <SubContainer>
                             <SubTitle href='#!'>About Us</SubTitle>
                             <SubTitle href='#!'>News</SubTitle>
@@ -192,6 +259,7 @@ const Footer = () => {
                         <MainTitle>
                             Our Product
                         </MainTitle>
+                        <MainTitleBorder style={{ width: 217 }} />
                         <RightMainSubContainer>
                             <SubContainer>
                                 <SubTitleMargin href='#!'>Webbing</SubTitleMargin>
@@ -212,7 +280,7 @@ const Footer = () => {
                         </RightMainSubContainer>
                     </RightMainContainer>
                 </MainCol>
-                <SideCol style={{ marginRight: 0, marginLeft: 47 }}>
+                <RightSideCol style={{ marginRight: 0, marginLeft: 47 }}>
                     <MainTitle>Contact Us</MainTitle>
                     <SubContainer>
                         <IconSubContainer>
@@ -235,7 +303,7 @@ const Footer = () => {
                             </SubTitle>
                         </IconSubContainer>
                     </SubContainer>
-                </SideCol>
+                </RightSideCol>
             </FooterColContainer>
             <SideItem>
                 <ItemWord>Ad. by BOFT</ItemWord>
