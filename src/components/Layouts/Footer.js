@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <div>Footer width: 1920, height: 400, bgc: #DFDFDF</div>
     )
 };
 
