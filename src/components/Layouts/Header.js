@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { HeaderLastItem } from '../common/HeaderLastItem';
 import { Container } from '../common/Container';
 import Logo from '../images/logo.png';
+import Menu from '../images/menu.png';
 
 const HeaderContainer = styled.div`
     /* border: 1px solid pink; */
@@ -18,6 +19,9 @@ const TitleItemContainer = styled.div`
     align-items: center;
     flex: 1;
     height: 100%;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;
 
 const TitleContainer = styled.div`
@@ -41,11 +45,30 @@ const LogoContainer = styled.div`
     display: flex;
     align-items: center;
     margin: auto;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid black; */
+        justify-content: space-between;
+        margin: 0;
+    }
+`;
+
+const MenuContainer = styled.div`
+    display: none;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid red; */
+        display: flex;
+        width: 40px;
+        height: 26px;
+    }
 `;
 
 const LogoItem = styled.img`
     height: 28.03px;
     width: 190px;
+    @media screen and (max-width: 800px) {
+        width: 134px;
+        height: 24px;
+    }
 `;
 
 const leftHeaderTitles = ['ABOUT', 'NEWS', 'PRODUCT']
@@ -66,6 +89,9 @@ const Header = () => {
                 <LogoContainer>
                     <LogoItem src={Logo} alt='logo' />
                 </LogoContainer>
+                <MenuContainer>
+                    <img src={Menu} alt='menu' />
+                </MenuContainer>
                 <TitleItemContainer>
                     {
                         rightHeaderTitles.map(item => (
