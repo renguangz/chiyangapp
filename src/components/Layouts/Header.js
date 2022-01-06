@@ -8,6 +8,8 @@ const HeaderContainer = styled.div`
     /* border: 1px solid pink; */
     width: 100vw;
     height: 100px;
+    background: rgba(245, 242, 232, 0.3);
+    backdrop-filter: blur(30px);
 `;
 
 const TitleItemContainer = styled.div`
@@ -48,8 +50,6 @@ const LogoItem = styled.img`
 
 const leftHeaderTitles = ['ABOUT', 'NEWS', 'PRODUCT']
 const rightHeaderTitles = ['CONTACT', 'DOWNLOAD', <HeaderLastItem />]
-const headerItem = ['ABOUT', 'NEWS', 'PRODUCT', <LogoItem src={Logo} alt='logo' />, 'CONTACT', 'DOWNLOAD', <HeaderLastItem />];
-// 'ABOUT', 'NEWS', 'PRODUCT', 'LOGO, 'CONTACT', 'DOWNLOAD', 'OTHER'
 const Header = () => {
     return (
         <HeaderContainer>
