@@ -13,13 +13,23 @@ import YoutubeIcon from '../images/YoutubeIcon.png';
 
 const FooterContainer = styled.div`
     /* border: 1px solid green; */
+    display: block;
     width: 100vw;
     height: 400px;
     background-color: #DFDFDF;
     display: flex;
-    position: absolute;
-    bottom: 0;
     margin: 0;
+    &:after {
+        /* border: 2px solid gold; */
+        content: 'Ad. by BOFT';
+        position: absolute;
+        right: 0;
+        transform: translate(28px, 336px) rotate(-90deg);
+        font-weight: 400;
+        font-size: 15px;
+        color: #FFFFFF;
+        font-family: Roboto, sans-serif;
+    }
     @media screen and (max-width: 800px) {
         /* border: 2px solid orange; */
         height: 470px;
@@ -203,24 +213,6 @@ const RightIcon = styled.img`
     margin-top: 6px;
 `;
 
-const SideItem = styled.div`
-    /* border: 2px solid gold; */
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transform:  translate(55px, 5px) rotate(-90deg);
-    transform-origin: top left;
-    line-height: 18px;
-`;
-
-const ItemWord = styled.p`
-    font-weight: 400;
-    font-size: 15px;
-    color: #FFFFFF;
-    font-family: Roboto, sans-serif;
-    margin: 0;
-`;
-
 const Footer = () => {
     return (
         <FooterContainer>
@@ -305,9 +297,6 @@ const Footer = () => {
                     </SubContainer>
                 </RightSideCol>
             </FooterColContainer>
-            <SideItem>
-                <ItemWord>Ad. by BOFT</ItemWord>
-            </SideItem>
         </FooterContainer>
     )
 };

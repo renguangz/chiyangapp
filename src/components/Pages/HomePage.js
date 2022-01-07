@@ -4,7 +4,7 @@ import DefaultLayout from '../Layouts/DefaultLayout';
 const HomePage = () => {
     return (
         <DefaultLayout>
-            
+           
         </DefaultLayout>
     )
 };

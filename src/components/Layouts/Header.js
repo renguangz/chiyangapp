@@ -13,6 +13,7 @@ const HeaderContainer = styled.div`
     height: 100px;
     background: rgba(245, 242, 232, 0.3);
     backdrop-filter: blur(30px);
+    position: fixed;
 `;
 
 const TitleItemContainer = styled.div`
