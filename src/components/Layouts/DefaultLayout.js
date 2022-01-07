@@ -5,15 +5,13 @@ import Footer from './Footer';
 import Header from './Header';
 
 const LayoutContainer = styled.div`
-    /* height: 100vh; // delete */
-    /* height: 100%; */
     background-color: ${Colors.bgc};
     width: 100vw;
 `;
 
 const BodyContainer = styled.div`
-    /* border: 2px solid pink; */
-
+    width: 100vw;
+    height: 100%;
 `;
 
 const DefaultLayout = ({ children }) => {
@@ -21,7 +19,7 @@ const DefaultLayout = ({ children }) => {
         <LayoutContainer>
             <Header />
             <BodyContainer>
-                {children}
+                { children }
             </BodyContainer>
             <Footer />
         </LayoutContainer>

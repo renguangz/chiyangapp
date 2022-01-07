@@ -181,6 +181,9 @@ const SubTitle = styled.a`
     margin-top: 0;
     margin-bottom: 12px;
     text-decoration: none;
+    &:hover {
+        color: #4F4F4F;
+    }
     @media screen and (max-width: 800px) {
         line-height:16px;
         font-size: 14px;

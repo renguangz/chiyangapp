@@ -14,6 +14,7 @@ const HeaderContainer = styled.div`
     background: rgba(245, 242, 232, 0.3);
     backdrop-filter: blur(30px);
     position: fixed;
+    z-index: 100;
 `;
 
 const TitleItemContainer = styled.div`
@@ -42,7 +43,11 @@ const StyledTitle = styled.a`
     font-family: Times;
     font-weight: 400;
     font-size: 20px;
+    color: black;
     cursor: pointer;
+    &:hover {
+        color: black;
+    }
     &:after {
         content: '';
         display:block;
