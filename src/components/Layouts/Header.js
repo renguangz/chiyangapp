@@ -54,12 +54,6 @@ const StyledTitle = styled.a`
     }
 `;
 
-const FirstStyledTitle = styled(StyledTitle)`
-    &:hover:after {
-        transform: ${props => `scaleX(${props.mouseOver ? 1 : 0})`}
-    }
-`;
-
 const LastStyledTitle = styled(StyledTitle)`
     cursor: auto;
     height: 100%;

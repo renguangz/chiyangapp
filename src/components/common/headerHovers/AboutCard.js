@@ -5,7 +5,7 @@ const AboutCardContainer = styled.div`
     /* border: 2px solid orange; */
     width: 240px;
     height: 190px;
-    cursor: pointer
+    cursor: pointer;
 `;
 
 const CardImgContainer = styled.div`
