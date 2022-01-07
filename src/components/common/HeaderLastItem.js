@@ -11,6 +11,7 @@ const LastItem = styled.div`
     /* border: 2px solid gold; */
     margin: auto;
     margin-left: 42px;
+    cursor: pointer;
 `;
 
 export const HeaderLastItem = () => {

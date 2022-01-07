@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { HeaderLastItem } from '../common/HeaderLastItem';
+import { SearchOutlined } from "@ant-design/icons/lib/icons";
 import { Container } from '../common/Container';
 import Logo from '../images/logo.png';
 import Menu from '../images/menu.png';
+import AboutHover from '../common/headerHovers/AboutHover';
+import SearchHover from '../common/headerHovers/SearchHover';
 
 const HeaderContainer = styled.div`
     /* border: 1px solid pink; */
@@ -31,12 +33,57 @@ const TitleContainer = styled.div`
     height: 100%;
     justify-content: left;
     align-items: center;
+    
 `;
 
-const StyledTitle = styled.div`
+const StyledTitle = styled.a`
+    /* border: 2px solid green; */
     font-family: Times;
     font-weight: 400;
     font-size: 20px;
+    cursor: pointer;
+    &:after {
+        content: '';
+        display:block;
+        border-bottom: solid 2px #000000; 
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+    }
+    &:hover:after {
+        transform: scaleX(1);
+    }
+`;
+
+const FirstStyledTitle = styled(StyledTitle)`
+    &:hover:after {
+        transform: ${props => `scaleX(${props.mouseOver ? 1 : 0})`}
+    }
+`;
+
+const LastStyledTitle = styled(StyledTitle)`
+    cursor: auto;
+    height: 100%;
+    &:after {
+        content: '';
+        display: none;
+    }
+`;
+
+const ItemContainer = styled.div`
+    /* border: 2px solid red; */
+    display: flex;
+    height: 100%;
+`;
+
+const LastItem = styled.div`
+    /* border: 2px solid gold; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100%;
+    width: 40px;
+    margin-left: 40px;
+    cursor: pointer;
 `;
 
 const LogoContainer = styled.div`
@@ -71,13 +118,22 @@ const LogoItem = styled.img`
     }
 `;
 
-const leftHeaderTitles = ['ABOUT', 'NEWS', 'PRODUCT']
-const rightHeaderTitles = ['CONTACT', 'DOWNLOAD', <HeaderLastItem />]
+const leftHeaderTitles = ['NEWS', 'PRODUCT']
+const rightHeaderTitles = ['CONTACT', 'DOWNLOAD']
 const Header = () => {
+    const [mouseOverAbout, setMouseOverAbout] = useState(false);
+    const [mouseOverSearch, setMouseOverSearch] = useState(false);
+
     return (
         <HeaderContainer>
             <Container>
                 <TitleItemContainer>
+                    <TitleContainer
+                        onMouseOver={() => setMouseOverAbout(true)}
+                        onMouseLeave={() => setMouseOverAbout(false)}
+                    >
+                        <StyledTitle>ABOUT</StyledTitle>
+                    </TitleContainer>
                     {
                         leftHeaderTitles.map((item, index) => (
                             <TitleContainer key={index}>
@@ -100,8 +156,29 @@ const Header = () => {
                             </TitleContainer>
                         ))
                     }
+                    <TitleContainer style={{ justifyContent: 'end' }}>
+                        <LastStyledTitle>
+                            <ItemContainer>
+                                <LastItem style={{ fontSize: '20px' }}>
+                                    <span>繁</span>
+                                </LastItem>
+                                <LastItem
+                                    onMouseOver={() => setMouseOverSearch(true)}
+                                    onMouseLeave={() => setMouseOverSearch(false)}
+                                >
+                                    <SearchOutlined style={{ fontSize: '23px' }} />
+                                </LastItem>
+                            </ItemContainer>
+                        </LastStyledTitle>
+                    </TitleContainer>
                 </TitleItemContainer>
             </Container>
+            <AboutHover
+                mouseOver={mouseOverAbout}
+                // onMouseEnter={() => setMouseOverAbout(true)}
+                // onMouseLeave={() => setMouseOverAbout(false)} 
+                />
+            <SearchHover mouseOver={mouseOverSearch} />
         </HeaderContainer>
     )
 };
