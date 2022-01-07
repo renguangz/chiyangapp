@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Container } from "../common/Container";
+import { Container } from "../../common/Container";
 
 const SectionContainer = styled.div`
     /* background-color: pink; */

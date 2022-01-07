@@ -3,7 +3,7 @@ import styled from 'styled-components';
 // import 'antd/dist/antd.css';
 // import 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css';
 // import { Carousel } from 'antd';
-import Carousel1 from '../images/Carousel1.png';
+import Carousel1 from '../../images/Carousel1.png';
 // import Carousel2 from '../images/Carousel2.jpg';
 
 const StyledImg = styled.div`

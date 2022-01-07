@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from '../common/Container';
+import { Container } from '../../common/Container';
 
 const ParaContainer = styled.div`
     /* border: 2px solid green; */
