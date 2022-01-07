@@ -4,6 +4,7 @@ import CarouselLayout from '../Layouts/HomeLayout/CarouselLayout';
 import styled from 'styled-components';
 import CookieLayout from '../Layouts/HomeLayout/CookieLayout';
 import SecondSectionLayout from '../Layouts/HomeLayout/SecondSectionLayout';
+import ThirdSectionLayout from '../Layouts/HomeLayout/ThirdSectionLayout';
 
 const FirstSectionContainer = styled.div`
     /* background: green; */
@@ -17,8 +18,8 @@ const SecondSectionContainer = styled.div`
 `;
 
 const ThirdSectionContainer = styled.div`
-    border: 2px solid greenyellow;
-    height: 1290px;
+    /* border: 2px solid greenyellow; */
+    height: 1044px;
     width: 100vw;
 `;
 
@@ -39,7 +40,7 @@ const HomePage = () => {
                 <SecondSectionLayout />
             </SecondSectionContainer>
             <ThirdSectionContainer>
-                
+                <ThirdSectionLayout />
             </ThirdSectionContainer>
             <CookieContainer>
                 <CookieLayout />
