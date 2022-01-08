@@ -31,9 +31,10 @@ const TitleBorder = styled.div`
 `;
 
 const ItemTitleContainer = styled.div`
-    border: 2px solid black;
+    /* border: 2px solid transparent; */
     display: block;
     width: 100%;
+    padding-top: 60px;
 `;
 
 const ItemTitle = styled.h1`
@@ -47,12 +48,11 @@ const ItemTitle = styled.h1`
     text-align: right;
     color: #F5F2E8;
     margin: 0;
-    margin-top: 60px;
     padding: 0;
 `;
 
 const CardsLayout = styled.div`
-    border: 2px solid black;
+    /* border: 2px solid black; */
     width: 100%;
     height: 828.5px;
     margin-top: 90px;
