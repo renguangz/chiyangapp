@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Container } from "../../common/Container";
 
 const SectionContainer = styled.div`
-    /* background-color: pink; */
+    background-color: pink;
     margin-top: 164px;
     margin-bottom: 170px;
     width: 100%;

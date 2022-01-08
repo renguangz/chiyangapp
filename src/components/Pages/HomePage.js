@@ -5,22 +5,13 @@ import styled from 'styled-components';
 import CookieLayout from '../Layouts/HomeLayout/CookieLayout';
 import SecondSectionLayout from '../Layouts/HomeLayout/SecondSectionLayout';
 import ThirdSectionLayout from '../Layouts/HomeLayout/ThirdSectionLayout';
+import FourthSectionLayout from '../Layouts/HomeLayout/FourthSectionLayout';
 
-const FirstSectionContainer = styled.div`
-    /* background: green; */
+const SectionContainer = styled.div`
+    border: 2px solid green;
     width: 100vw;
-`;
-
-const SecondSectionContainer = styled.div`
-    /* border: 2px solid steelblue; */
-    height: 630px;
-    /* width: 100vw; */
-`;
-
-const ThirdSectionContainer = styled.div`
-    /* border: 2px solid greenyellow; */
-    height: 1044px;
-    /* width: 100vw; */
+    height: ${props => props.height}px;
+    margin-top: ${props => props.marginTop || 0}px;
 `;
 
 const CookieContainer = styled.div`
@@ -33,15 +24,18 @@ const CookieContainer = styled.div`
 const HomePage = () => {
     return (
         <DefaultLayout>
-            <FirstSectionContainer>
+            <SectionContainer height={800}>
                 <CarouselLayout />
-            </FirstSectionContainer>
-            <SecondSectionContainer>
+            </SectionContainer>
+            <SectionContainer height={630}>
                 <SecondSectionLayout />
-            </SecondSectionContainer>
-            <ThirdSectionContainer>
+            </SectionContainer>
+            <SectionContainer height={1044}>
                 <ThirdSectionLayout />
-            </ThirdSectionContainer>
+            </SectionContainer>
+            <SectionContainer height={870}>
+                <FourthSectionLayout />
+            </SectionContainer>
             <CookieContainer>
                 <CookieLayout />
             </CookieContainer>

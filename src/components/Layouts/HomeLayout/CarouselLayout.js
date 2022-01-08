@@ -8,7 +8,7 @@ import Carousel1 from '../../images/Carousel1.png';
 
 const StyledImg = styled.div`
     /* border: 2px solid green; */
-    height: 800px;
+    height: 100%;
     background-image: url(${props => props.imgUrl});
     background-position: center;
     background-size: cover;
