@@ -127,26 +127,6 @@ const UnclickableButton = styled(StyledButton)`
     pointer-events: none;
 `;
 
-const ButtonWordContainer = styled.div`
-    /* border: 2px solid white; */
-    margin: 20px 30px;
-    flex: 1;
-    height: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-`;
-
-const ButtonWords = styled.span`
-    /* border: 2px solid pink; */
-    font-family: Times;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: center;
-`;
-
 const data = [
     { index: 0, cardImg: Fourth1, title: 'Design', para: 'Years of experience in cooperation with major sports brands and understanding of various customer needs. Provide new design ideas every season and continue to invest in new machines to increase R&D efficiency. R&D staff of each factory to provide localized services quickly and shorten the development time. Leading the brand to break through the past new concepts to conceive new products like never before.' },
     { index: 1, cardImg: Fourth2, title: 'Production', para: 'We have hundreds of machines for weaving,jacquard, knitting, braiding, etc. Mature and professional partner with strict control of raw materials and processing quality.  Monthly production capacity of 25 million yards, can provide a large number of stable products. Four production bases to pursue localized production and reduce transportation time. Distribute the external risks, support each other and reduce delay. To face the global crisis, we have flexibly adjusted our production line to maintain a stable supply. New production lines and innovation continue to be launched.' },
