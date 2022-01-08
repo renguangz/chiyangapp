@@ -14,13 +14,13 @@ const FirstSectionContainer = styled.div`
 const SecondSectionContainer = styled.div`
     /* border: 2px solid steelblue; */
     height: 630px;
-    width: 100vw;
+    /* width: 100vw; */
 `;
 
 const ThirdSectionContainer = styled.div`
     /* border: 2px solid greenyellow; */
     height: 1044px;
-    width: 100vw;
+    /* width: 100vw; */
 `;
 
 const CookieContainer = styled.div`
