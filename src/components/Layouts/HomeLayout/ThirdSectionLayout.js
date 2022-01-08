@@ -9,6 +9,8 @@ import Card3 from '../../images/Card3.png';
 const LayoutContainer = styled.div`
     /* border: 2px solid purple; */
     height: 1044px;
+    flex: 1;
+    width: 100%;
 `;
 
 const TopItemContainer = styled.div`
@@ -59,10 +61,9 @@ const CardsLayout = styled.div`
 
 const StyledContainer = styled(Container)`
     /* border: 2px solid green; */
-    width: 84%;
-    height: 100%;
-    position: absolute;
-    left: 0;
+    /* width: 84%; */
+    position: relative;
+    /* left: 0; */
     display: block;
     z-index: 1;
 `;
