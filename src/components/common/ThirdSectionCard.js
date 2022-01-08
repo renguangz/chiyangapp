@@ -38,7 +38,6 @@ const CardPara = styled.h4`
     text-align: center;
     color: #4F4F4F;
     white-space: pre-line;
-    /* width: 320px; */
 `;
 
 const ThirdSectionCard = ({ src, cardTitle, cardPara }) => {

@@ -31,10 +31,9 @@ const TitleBorder = styled.div`
 `;
 
 const ItemTitleContainer = styled.div`
-    /* border: 2px solid black; */
+    border: 2px solid black;
     display: block;
     width: 100%;
-    margin-top: 60px;
 `;
 
 const ItemTitle = styled.h1`
@@ -48,11 +47,12 @@ const ItemTitle = styled.h1`
     text-align: right;
     color: #F5F2E8;
     margin: 0;
+    margin-top: 60px;
     padding: 0;
 `;
 
 const CardsLayout = styled.div`
-    /* border: 2px solid black; */
+    border: 2px solid black;
     width: 100%;
     height: 828.5px;
     margin-top: 90px;
@@ -61,9 +61,7 @@ const CardsLayout = styled.div`
 
 const StyledContainer = styled(Container)`
     /* border: 2px solid green; */
-    /* width: 84%; */
     position: relative;
-    /* left: 0; */
     display: block;
     z-index: 1;
 `;
