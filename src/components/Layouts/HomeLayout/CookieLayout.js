@@ -6,10 +6,13 @@ const ParaContainer = styled.div`
     /* border: 2px solid green; */
     width: 944px;
     height: 100%;
-    margin-right: 116px;;
+    margin-right: 116px;
+    display: flex;
+    align-items: center;
 `;
 
 const ParaText = styled.p`
+    /* border: 2px solid green; */
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 20px;
