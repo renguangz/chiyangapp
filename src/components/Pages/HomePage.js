@@ -6,6 +6,7 @@ import CookieLayout from '../Layouts/HomeLayout/CookieLayout';
 import SecondSectionLayout from '../Layouts/HomeLayout/SecondSectionLayout';
 import ThirdSectionLayout from '../Layouts/HomeLayout/ThirdSectionLayout';
 import FourthSectionLayout from '../Layouts/HomeLayout/fourthSection/FourthSectionLayout';
+import FifthSectionLayout from '../Layouts/HomeLayout/fifthSection/FifthSectionLayout';
 
 const SectionContainer = styled.div`
     /* border: 2px solid green; */
@@ -19,6 +20,7 @@ const CookieContainer = styled.div`
     height: 220px;
     background-color: #000000;
     opacity: 80%;
+    margin-top: 10px; // delete
 `;
 
 const HomePage = () => {
@@ -35,6 +37,9 @@ const HomePage = () => {
             </SectionContainer>
             <SectionContainer height={870} marginTop={246}>
                 <FourthSectionLayout />
+            </SectionContainer>
+            <SectionContainer height={1722} marginTop={304}>
+                <FifthSectionLayout />
             </SectionContainer>
             <CookieContainer>
                 <CookieLayout />
