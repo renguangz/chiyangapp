@@ -2,7 +2,6 @@ import React from 'react';
 import DefaultLayout from '../Layouts/DefaultLayout';
 import CarouselLayout from '../Layouts/HomeLayout/CarouselLayout';
 import styled from 'styled-components';
-import CookieLayout from '../Layouts/HomeLayout/CookieLayout';
 import SecondSectionLayout from '../Layouts/HomeLayout/SecondSectionLayout';
 import ThirdSectionLayout from '../Layouts/HomeLayout/ThirdSectionLayout';
 import FourthSectionLayout from '../Layouts/HomeLayout/fourthSection/FourthSectionLayout';
@@ -14,14 +13,6 @@ const SectionContainer = styled.div`
     width: 100vw;
     height: ${props => props.height}px;
     margin-top: ${props => props.marginTop || 0}px;
-`;
-
-const CookieContainer = styled.div`
-    /* border: 2px solid green; */
-    height: 220px;
-    background-color: #000000;
-    opacity: 80%;
-    margin-top: 10px; // delete
 `;
 
 const HomePage = () => {
@@ -45,9 +36,6 @@ const HomePage = () => {
             <SectionContainer height={880} marginTop={306}>
                 <SixSectionLayout />
             </SectionContainer>
-            <CookieContainer>
-                <CookieLayout />
-            </CookieContainer>
         </DefaultLayout>
     )
 };
