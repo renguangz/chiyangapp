@@ -26,6 +26,10 @@ const CookieContainer = styled.div`
     position: fixed;
     bottom: 0;
     z-index: 50;
+    @media screen and (max-width: 800px) {
+        height: 360px;
+        /* height: 640px; */
+    }
 `;
 
 const HeaderMenuBgc = styled.div`
