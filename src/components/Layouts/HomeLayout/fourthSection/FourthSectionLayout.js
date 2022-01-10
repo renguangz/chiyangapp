@@ -9,7 +9,7 @@ import ButtonsLayout from './ButtonsLayout';
 import RwdCard from './RwdCard';
 
 const FourthContainer = styled.div`
-    border: 2px solid steelblue;
+    /* border: 2px solid steelblue; */
     height: 100%;
     display: flex;
     flex: 1;
