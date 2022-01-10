@@ -16,6 +16,45 @@ const CardContainer = styled.div`
     &:nth-child(3n+3) {
         margin-right: 0;
     }
+    @media screen and (max-width: 800px) {
+        border: 1px solid #808080;
+        width: 150px;
+        height: 190px;
+        margin: 0;
+        margin-bottom: 26px;
+        background-image: none;
+    }
+`;
+
+const RwdCardImg = styled.img`
+    display: none;
+     @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        display: block;
+        width: 140px;
+        height: 140px;
+        margin: 5px;
+        margin-bottom: 0;
+    }
+`;
+
+const RwdCardTitle = styled.p`
+    /* border: 2px solid pink; */
+    display: none;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #808080;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        display: block;
+        margin: 0;
+        margin-top: 6px;
+    }
 `;
 
 const HoverBackground = styled.div`
@@ -26,6 +65,9 @@ const HoverBackground = styled.div`
     &:hover {
         background: #000000;
         opacity: 0.7;
+    }
+     @media screen and (max-width: 800px) {
+        display: none;
     }
 `;
 
@@ -95,6 +137,8 @@ const Card = ({ imageUrl, title }) => {
 
     return (
         <CardContainer imageUrl={imageUrl}>
+            <RwdCardImg src={imageUrl} alt='rwd image' />
+            <RwdCardTitle>{title}</RwdCardTitle>
             <HoverBackground 
             onMouseEnter={() => setMouseEnter(true)} 
             onMouseLeave={() => setMouseEnter(false)}>

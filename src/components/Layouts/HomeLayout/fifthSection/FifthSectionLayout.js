@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container } from '../../../common/Container';
+import { Border, Container } from '../../../common/Container';
 import Card from './Card';
 import Fifth1 from '../../../images/Fifth1.png';
 import Fifth2 from '../../../images/Fifth2.png';
@@ -17,6 +17,12 @@ import Fifth11 from '../../../images/Fifth11.png';
 const FifthContainer = styled(Container)`
     /* border: 2px solid purple; */
     display: block;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        max-width: 310px;
+        margin: 0 auto;
+        height: 1392px;
+    }
 `;
 
 const FifthTitle = styled.h1`
@@ -29,6 +35,13 @@ const FifthTitle = styled.h1`
     letter-spacing: 0.02em;
     text-align: center;
     margin: 0;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: right;
+    }
 `;
 
 const PhotoCardsContainer = styled.div`
@@ -38,6 +51,12 @@ const PhotoCardsContainer = styled.div`
     width: 100%;
     height: 1630px;
     margin-top: 20px;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        border: none;
+        margin-top: 64px;
+        height: 1280px;
+    }
 `;
 
 const CardsLayoutContainer = styled.div`
@@ -46,6 +65,20 @@ const CardsLayoutContainer = styled.div`
     margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
+     @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        margin: 0;
+        justify-content: space-between;
+    }
+`;
+
+const RwdBorder = styled(Border)`
+    display: none;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        display: block;
+        margin-top: 24px;
+    }
 `;
 
 const data = [
@@ -66,6 +99,7 @@ const FifthSectionLayout = () => {
     return (
         <FifthContainer>
             <FifthTitle>OUR PRODUCT</FifthTitle>
+            <RwdBorder />
             <PhotoCardsContainer>
                 <CardsLayoutContainer>
                     {
