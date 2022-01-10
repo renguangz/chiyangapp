@@ -28,7 +28,6 @@ const CookieContainer = styled.div`
     z-index: 50;
     @media screen and (max-width: 800px) {
         height: 360px;
-        /* height: 640px; */
     }
 `;
 
