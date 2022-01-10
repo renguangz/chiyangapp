@@ -12,3 +12,13 @@ body {
   height: 100%;
 	overflow: auto;
 }
+
+.sixthButtonClick {
+  color: #ffffff;
+  background: #000000;
+}
+
+.sixthButtonUnclick {
+  color: #000000;
+  background: none;
+}
