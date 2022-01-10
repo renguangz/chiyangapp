@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Colors } from '../common/Colors';
 import Footer from './Footer';
-import Header from './Header';
+import Header from './Header/Header';
+import HeaderMenu from './Header/HeaderMenu';
 import CookieLayout from './HomeLayout/CookieLayout';
 
 const LayoutContainer = styled.div`
@@ -27,12 +28,38 @@ const CookieContainer = styled.div`
     z-index: 50;
 `;
 
+const HeaderMenuBgc = styled.div`
+    background: ${Colors.latteBgc};
+    display: ${props => props.display};
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    opacity: 95%;
+`;
+
 const DefaultLayout = ({ children }) => {
+    const [headerMenuDisplay, setHeaderMenuDisplay] = useState(false);
     const [cookieDisplay, setCookieDisplay] = useState(true);
+
+    useEffect(() => {
+        if (headerMenuDisplay) {
+            document.body.style.overflow = 'hidden';
+        }
+        return () => {
+                document.body.style.overflow = 'scroll'
+        }
+    }, [headerMenuDisplay])
 
     return (
         <LayoutContainer>
-            <Header />
+            {/* propblems on useEffect which disable scrolling */}
+            <HeaderMenuBgc display={headerMenuDisplay ? 'block' : 'none'}>
+                <HeaderMenu closeMenu={() => setHeaderMenuDisplay(false)} />
+            </HeaderMenuBgc>
+            <Header headerMenuClick={() => setHeaderMenuDisplay(true)} />
             <CookieContainer
                 display={cookieDisplay ? 'block' : 'none'}
                 onClick={() => setCookieDisplay(false)}
@@ -40,7 +67,7 @@ const DefaultLayout = ({ children }) => {
                 <CookieLayout />
             </CookieContainer>
             <BodyContainer>
-                { children }
+                {children}
             </BodyContainer>
             <Footer />
         </LayoutContainer>

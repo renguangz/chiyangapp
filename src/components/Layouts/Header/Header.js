@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { SearchOutlined } from "@ant-design/icons/lib/icons";
-import { Container } from '../common/Container';
-import Logo from '../images/logo.png';
-import Menu from '../images/menu.png';
-import AboutHover from '../common/headerHovers/AboutHover';
-import SearchHover from '../common/headerHovers/SearchHover';
+import { Container } from '../../common/Container';
+import Logo from '../../images/logo.png';
+import Menu from '../../images/menu.png';
+import AboutHover from '../../common/headerHovers/AboutHover';
+import SearchHover from '../../common/headerHovers/SearchHover';
 
 const HeaderContainer = styled.div`
     /* border: 1px solid pink; */
@@ -101,8 +101,9 @@ const LogoContainer = styled.div`
 
 const MenuContainer = styled.div`
     display: none;
+    cursor: pointer;
     @media screen and (max-width: 800px) {
-        /* border: 2px solid red; */
+        border: 2px solid red;
         display: flex;
         width: 40px;
         height: 26px;
@@ -120,7 +121,7 @@ const LogoItem = styled.img`
 
 const leftHeaderTitles = ['NEWS', 'PRODUCT']
 const rightHeaderTitles = ['CONTACT', 'DOWNLOAD']
-const Header = () => {
+const Header = ({ headerMenuClick }) => {
     const [mouseOverAbout, setMouseOverAbout] = useState(false);
     const [mouseOverSearch, setMouseOverSearch] = useState(false);
 
@@ -145,7 +146,7 @@ const Header = () => {
                 <LogoContainer>
                     <LogoItem src={Logo} alt='logo' />
                 </LogoContainer>
-                <MenuContainer>
+                <MenuContainer onClick={headerMenuClick}>
                     <img src={Menu} alt='menu' />
                 </MenuContainer>
                 <TitleItemContainer>
@@ -175,9 +176,7 @@ const Header = () => {
             </Container>
             <AboutHover
                 mouseOver={mouseOverAbout}
-                // onMouseEnter={() => setMouseOverAbout(true)}
-                // onMouseLeave={() => setMouseOverAbout(false)} 
-                />
+            />
             <SearchHover mouseOver={mouseOverSearch} />
         </HeaderContainer>
     )
