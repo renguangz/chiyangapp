@@ -103,7 +103,7 @@ const MenuContainer = styled.div`
     display: none;
     cursor: pointer;
     @media screen and (max-width: 800px) {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         display: flex;
         width: 40px;
         height: 26px;
