@@ -3,7 +3,7 @@ import DefaultLayout from '../Layouts/DefaultLayout';
 import CarouselLayout from '../Layouts/HomeLayout/CarouselLayout';
 import styled from 'styled-components';
 import SecondSectionLayout from '../Layouts/HomeLayout/SecondSectionLayout';
-import ThirdSectionLayout from '../Layouts/HomeLayout/ThirdSectionLayout';
+import ThirdSectionLayout from '../Layouts/HomeLayout/thirdSection/ThirdSectionLayout';
 import FourthSectionLayout from '../Layouts/HomeLayout/fourthSection/FourthSectionLayout';
 import FifthSectionLayout from '../Layouts/HomeLayout/fifthSection/FifthSectionLayout';
 import SixSectionLayout from '../Layouts/HomeLayout/SixthSectionLayout';
@@ -13,29 +13,33 @@ const SectionContainer = styled.div`
     width: 100vw;
     height: ${props => props.height}px;
     margin-top: ${props => props.marginTop || 0}px;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+       height: ${props => props.rwdHeight}px;
+    }
 `;
 
 const HomePage = () => {
     return (
         <DefaultLayout>
-            <SectionContainer height={800}>
+            {/* <SectionContainer height={800}>
                 <CarouselLayout />
-            </SectionContainer>
+            </SectionContainer> */}
             <SectionContainer height={630}>
                 <SecondSectionLayout />
             </SectionContainer>
-            <SectionContainer height={1044}>
+            <SectionContainer height={1044} rwdHeight={1952}>
                 <ThirdSectionLayout />
             </SectionContainer>
-            <SectionContainer height={870} marginTop={246}>
+            {/* <SectionContainer height={870} marginTop={246}>
                 <FourthSectionLayout />
-            </SectionContainer>
-            <SectionContainer height={1722} marginTop={304}>
+            </SectionContainer> */}
+            {/* <SectionContainer height={1722} marginTop={304}>
                 <FifthSectionLayout />
-            </SectionContainer>
-            <SectionContainer height={880} marginTop={306}>
+            </SectionContainer> */}
+            {/* <SectionContainer height={880} marginTop={306}>
                 <SixSectionLayout />
-            </SectionContainer>
+            </SectionContainer> */}
         </DefaultLayout>
     )
 };

@@ -1,16 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import { Container } from "../../common/Container";
-import ThirdSectionCard from "../../common/ThirdSectionCard";
-import Card1 from '../../images/Card1.png';
-import Card2 from '../../images/Card2.png';
-import Card3 from '../../images/Card3.png';
+import { Container } from "../../../common/Container";
+import ThirdSectionCard from "./ThirdSectionCard";
+import Card1 from '../../../images/Card1.png';
+import Card2 from '../../../images/Card2.png';
+import Card3 from '../../../images/Card3.png';
 
 const LayoutContainer = styled.div`
     /* border: 2px solid purple; */
     height: 1044px;
     flex: 1;
     width: 100%;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid purple; */
+        height: 1952px;
+    }
 `;
 
 const TopItemContainer = styled.div`
@@ -21,6 +25,12 @@ const TopItemContainer = styled.div`
     right: 0;
     display: flex;
     justify-content: right;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid pink; */
+        width: 100%;
+        height: 240px;
+
+    }
 `;
 
 const TitleBorder = styled.div`
@@ -28,6 +38,11 @@ const TitleBorder = styled.div`
     height: 1px;
     background-color: #F5F2E8;
     margin-top: 140px;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        width: 320px;
+        margin-top: 112px;
+    }
 `;
 
 const ItemTitleContainer = styled.div`
@@ -35,6 +50,10 @@ const ItemTitleContainer = styled.div`
     display: block;
     width: 100%;
     padding-top: 60px;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        padding-top: 44px;
+    }
 `;
 
 const ItemTitle = styled.h1`
@@ -49,6 +68,12 @@ const ItemTitle = styled.h1`
     color: #F5F2E8;
     margin: 0;
     padding: 0;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        font-family: Times;
+        font-size: 30px;
+        letter-spacing: 0em;
+    }
 `;
 
 const CardsLayout = styled.div`
@@ -57,6 +82,11 @@ const CardsLayout = styled.div`
     height: 828.5px;
     margin-top: 90px;
     display: flex;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        display: block;
+        margin-top: 36px;
+    }
 `;
 
 const StyledContainer = styled(Container)`
@@ -64,6 +94,11 @@ const StyledContainer = styled(Container)`
     position: relative;
     display: block;
     z-index: 1;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        max-width: 310px;
+        margin: 0 auto;
+    }
 `;
 
 const cardsData = [
