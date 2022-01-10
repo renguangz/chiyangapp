@@ -16,6 +16,7 @@ const SectionContainer = styled.div`
     @media screen and (max-width: 800px) {
         /* border: 2px solid green; */
        height: ${props => props.rwdHeight}px;
+       margin-top: ${props => props.rwdMarginTop || 0}px;
     }
 `;
 
@@ -25,15 +26,15 @@ const HomePage = () => {
             {/* <SectionContainer height={800}>
                 <CarouselLayout />
             </SectionContainer> */}
-            <SectionContainer height={630}>
+            {/* <SectionContainer height={630}>
                 <SecondSectionLayout />
-            </SectionContainer>
+            </SectionContainer> */}
             <SectionContainer height={1044} rwdHeight={1952}>
                 <ThirdSectionLayout />
             </SectionContainer>
-            {/* <SectionContainer height={870} marginTop={246}>
+            <SectionContainer height={870} marginTop={246} rwdHeight={2552} rwdMarginTop={160}>
                 <FourthSectionLayout />
-            </SectionContainer> */}
+            </SectionContainer>
             {/* <SectionContainer height={1722} marginTop={304}>
                 <FifthSectionLayout />
             </SectionContainer> */}

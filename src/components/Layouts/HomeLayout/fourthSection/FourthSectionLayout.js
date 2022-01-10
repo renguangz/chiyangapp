@@ -6,6 +6,7 @@ import Fourth2 from '../../../images/Fourth2.png';
 import Fourth3 from '../../../images/Fourth3.png';
 import { SwapLeftOutlined, SwapRightOutlined } from '@ant-design/icons/lib/icons';
 import ButtonsLayout from './ButtonsLayout';
+import RwdCard from './RwdCard';
 
 const FourthContainer = styled.div`
     /* border: 2px solid steelblue; */
@@ -13,6 +14,11 @@ const FourthContainer = styled.div`
     display: flex;
     flex: 1;
     margin-right: 8%;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        max-width: 310px;
+        margin: 0 auto;
+    }
 `;
 
 const ImgTitleContainer = styled.div`
@@ -21,6 +27,11 @@ const ImgTitleContainer = styled.div`
     display: flex;
     flex: 4;
     margin-right: 57px;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        flex: 0;
+        margin-right: 0;
+    }
 `;
 
 const ImgContainer = styled.div`
@@ -31,6 +42,13 @@ const ImgContainer = styled.div`
     margin: 46px 0;
     position: absolute;
     transform: translateX(-339px);
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        width: 260px;
+        height: 260px;
+        margin: 0;
+        display: none;
+    }
 `;
 
 const TitleContainer = styled.div`
@@ -39,12 +57,20 @@ const TitleContainer = styled.div`
     width: 468px;
     position: absolute;
     left: 2.8%;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;
 
 const ContentContainer = styled.div`
     /* border: 2px solid pink; */
     flex: 6;
     margin-top: 70px;
+    @media screen and (max-width: 800px) {
+        flex: 1;
+        width: 100%;
+        margin-top: 0;
+    }
 `;
 
 const ContentTitle = styled.h1`
@@ -58,6 +84,14 @@ const ContentTitle = styled.h1`
     text-align: left;
     color: #000;
     margin: 0;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        font-size: 36px;
+        line-height: 40px;
+        letter-spacing: 0em;
+        text-align: right;
+        margin-bottom: 64px;
+    }
 `;
 
 const Border = styled.div`
@@ -65,6 +99,13 @@ const Border = styled.div`
     height: 1px;
     background: #000000;
     margin: 45px 0;
+    @media screen and (max-width: 800px) {
+        width: 55%;
+        margin-top: -44px;
+        margin-bottom: 0;
+        position: absolute;
+        right: 0;
+    }
 `;
 
 const ParaTitle = styled.h3`
@@ -77,6 +118,9 @@ const ParaTitle = styled.h3`
     letter-spacing: 0em;
     text-align: left;
     margin: 0;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;
 
 const Para = styled.h4`
@@ -91,6 +135,9 @@ const Para = styled.h4`
     margin: 0;
     margin-top: 15px;
     height: 437px;
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 `;
 
 const ButtonContainer = styled.div`
@@ -99,6 +146,10 @@ const ButtonContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        display: none
+    }
 `;
 
 const StyledButton = styled.button`
@@ -147,7 +198,9 @@ const FourthSectionLayout = () => {
         <FourthContainer>
             <ImgTitleContainer>
                 <ImgContainer>
-                    <img src={data[dataIndex].cardImg} alt='roundImg' />
+                    <img src={data[dataIndex].cardImg} alt='roundImg'
+                        style={{ width: '100%', height: '100%' }}
+                    />
                 </ImgContainer>
                 <TitleContainer>
                     <img src={FourthImgTitle} alt='titleImg' />
@@ -156,6 +209,16 @@ const FourthSectionLayout = () => {
             <ContentContainer>
                 <ContentTitle>WHY YOU SHOULD WORK WITH US</ContentTitle>
                 <Border />
+                {
+                    data.map(item => (
+                        <RwdCard
+                            key={item.index}
+                            cardImg={item.cardImg}
+                            cardTitle={item.title}
+                            cardPara={item.para}
+                        />
+                    ))
+                }
                 <ParaTitle>{data[dataIndex].title}</ParaTitle>
                 <Para>
                     {data[dataIndex].para}
