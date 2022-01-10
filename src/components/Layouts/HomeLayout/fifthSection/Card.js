@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Arrow from '../../../images/Arrow.png';
+import '../../../../App.css';
 
 const CardContainer = styled.div`
     /* border: 2px solid green; */
@@ -23,26 +24,17 @@ const HoverBackground = styled.div`
     height: 100%;
     opacity: 0;
     &:hover {
-        display: block;
         background: #000000;
         opacity: 0.7;
     }
 `;
 
 const Hover = styled.div`
-    border: 1px solid #F5F2E8;
+    /* border: 1px solid #F5F2E8; */
     height: 306px;
     width: 306px;
     margin: 27px;
     margin-bottom: 0;
-    &:before {
-        content: '';
-        display: block;
-        width: 0;
-         height: 2px;
-  background: orange;
-  transition: width 300ms;
-    }
 `;
 
 const HoverContainer = styled.div`
@@ -99,10 +91,14 @@ const MoreText = styled.span`
 `;
 
 const Card = ({ imageUrl, title }) => {
+    const [mouseenter, setMouseEnter] = useState(true);
+
     return (
         <CardContainer imageUrl={imageUrl}>
-            <HoverBackground>
-                <Hover>
+            <HoverBackground 
+            onMouseEnter={() => setMouseEnter(true)} 
+            onMouseLeave={() => setMouseEnter(false)}>
+                <Hover className={mouseenter ? 'fifthCard': ''} >
                     <HoverContainer>
                         <HoverTitleContainer>
                             <HoverTitle>{title}</HoverTitle>
