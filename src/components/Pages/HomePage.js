@@ -32,12 +32,12 @@ const HomePage = () => {
             <SectionContainer height={1044} rwdHeight={1952}>
                 <ThirdSectionLayout />
             </SectionContainer>
-            <SectionContainer height={870} marginTop={246} rwdHeight={2552} rwdMarginTop={160}>
+            <SectionContainer height={870} marginTop={246} rwdHeight={2510} rwdMarginTop={160}>
                 <FourthSectionLayout />
             </SectionContainer>
-            {/* <SectionContainer height={1722} marginTop={304}>
+            <SectionContainer height={1722} marginTop={304}>
                 <FifthSectionLayout />
-            </SectionContainer> */}
+            </SectionContainer>
             {/* <SectionContainer height={880} marginTop={306}>
                 <SixSectionLayout />
             </SectionContainer> */}
