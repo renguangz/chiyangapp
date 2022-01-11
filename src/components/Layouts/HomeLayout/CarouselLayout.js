@@ -63,10 +63,11 @@ const ControlButtonsContainer = styled.div`
     width: 100vw;
     height: 140px;
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
+    top: 0;
     @media screen and (max-width: 800px) {
         /* border: 2px solid pink; */
-        transform: translateY(-120px);
+        transform: translateY(440px);
     }
 `;
 
