@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/renguangz/chiyangapp/static/css/main.f03710b6.css",
+    "main.js": "/renguangz/chiyangapp/static/js/main.7db89648.js",
+    "static/js/787.a70bdb42.chunk.js": "/renguangz/chiyangapp/static/js/787.a70bdb42.chunk.js",
+    "static/media/Carousel2.jpg": "/renguangz/chiyangapp/static/media/Carousel2.6212e16e2e02a914cbc7.jpg",
+    "static/media/Carousel1.png": "/renguangz/chiyangapp/static/media/Carousel1.75e59f5b0ef5dabf792e.png",
+    "static/media/Fourth1.png": "/renguangz/chiyangapp/static/media/Fourth1.c85ccd392e4a2618b80f.png",
+    "static/media/Fourth2.png": "/renguangz/chiyangapp/static/media/Fourth2.d601fb82f2ef24c26593.png",
+    "static/media/Fourth3.png": "/renguangz/chiyangapp/static/media/Fourth3.8df932ae7570b580eea7.png",
+    "static/media/Six1.png": "/renguangz/chiyangapp/static/media/Six1.40fc3f7c61ef4f4ee51c.png",
+    "static/media/Six2.jpeg": "/renguangz/chiyangapp/static/media/Six2.ef3a595d39f7da6e61d3.jpeg",
+    "static/media/Six3.jpeg": "/renguangz/chiyangapp/static/media/Six3.f06091b8379d18460cfd.jpeg",
+    "static/media/Fifth1.png": "/renguangz/chiyangapp/static/media/Fifth1.1b3545463700192c8364.png",
+    "static/media/Fifth6.png": "/renguangz/chiyangapp/static/media/Fifth6.3bbe9a8adf9970ac28c7.png",
+    "static/media/Card1.png": "/renguangz/chiyangapp/static/media/Card1.81ea57003ef7a3549bca.png",
+    "static/media/Fifth7.png": "/renguangz/chiyangapp/static/media/Fifth7.56c28396ae84edd11bff.png",
+    "static/media/Six4.jpeg": "/renguangz/chiyangapp/static/media/Six4.5328f67851b810418e82.jpeg",
+    "static/media/Fifth9.png": "/renguangz/chiyangapp/static/media/Fifth9.bbc558e4e7c232b495cb.png",
+    "static/media/Fifth5.png": "/renguangz/chiyangapp/static/media/Fifth5.45c7536ed57bbb77c81b.png",
+    "static/media/Fifth8.png": "/renguangz/chiyangapp/static/media/Fifth8.e7c74865be00800565ef.png",
+    "static/media/Fifth10.png": "/renguangz/chiyangapp/static/media/Fifth10.587d9ce5b293d96f4c1b.png",
+    "static/media/Card2.png": "/renguangz/chiyangapp/static/media/Card2.32bda546146c7f35716a.png",
+    "static/media/Fifth11.png": "/renguangz/chiyangapp/static/media/Fifth11.c87da1a8769b9aaeab2d.png",
+    "static/media/Card3.png": "/renguangz/chiyangapp/static/media/Card3.882211bde1574fb7794f.png",
+    "static/media/Fifth4.png": "/renguangz/chiyangapp/static/media/Fifth4.5cf61568d4b7f13b8e62.png",
+    "static/media/Fifth3.png": "/renguangz/chiyangapp/static/media/Fifth3.9db81a2df3698b57737f.png",
+    "static/media/About2.png": "/renguangz/chiyangapp/static/media/About2.e234118a218ad92c5a77.png",
+    "static/media/About4.png": "/renguangz/chiyangapp/static/media/About4.ff1fbd622a1e962363ea.png",
+    "static/media/About3.png": "/renguangz/chiyangapp/static/media/About3.1c21e497fb2e876350bc.png",
+    "static/media/About1.png": "/renguangz/chiyangapp/static/media/About1.447ea2b25e547035a875.png",
+    "static/media/FourthImgTitle.png": "/renguangz/chiyangapp/static/media/FourthImgTitle.120822514cacfb439896.png",
+    "static/media/Fifth2.png": "/renguangz/chiyangapp/static/media/Fifth2.474c8182a6c40cb7e118.png",
+    "index.html": "/renguangz/chiyangapp/index.html",
+    "main.f03710b6.css.map": "/renguangz/chiyangapp/static/css/main.f03710b6.css.map",
+    "main.7db89648.js.map": "/renguangz/chiyangapp/static/js/main.7db89648.js.map",
+    "787.a70bdb42.chunk.js.map": "/renguangz/chiyangapp/static/js/787.a70bdb42.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f03710b6.css",
+    "static/js/main.7db89648.js"
+  ]
+}
