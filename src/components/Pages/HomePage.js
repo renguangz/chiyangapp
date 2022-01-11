@@ -6,6 +6,7 @@ import SecondSectionLayout from '../Layouts/HomeLayout/SecondSectionLayout';
 import ThirdSectionLayout from '../Layouts/HomeLayout/thirdSection/ThirdSectionLayout';
 import FourthSectionLayout from '../Layouts/HomeLayout/fourthSection/FourthSectionLayout';
 import FifthSectionLayout from '../Layouts/HomeLayout/fifthSection/FifthSectionLayout';
+// import SixSectionLayout from '../Layouts/HomeLayout/sixthSection/SixthSectionLayout';
 import SixSectionLayout from '../Layouts/HomeLayout/SixthSectionLayout';
 
 const SectionContainer = styled.div`
@@ -38,9 +39,9 @@ const HomePage = () => {
             <SectionContainer height={1722} marginTop={304} rwdHeight={1460} rwdMarginTop={120}>
                 <FifthSectionLayout />
             </SectionContainer>
-            {/* <SectionContainer height={880} marginTop={306}>
+            <SectionContainer height={880} marginTop={306} rwdHeight={2808} rwdMarginTop={130}>
                 <SixSectionLayout />
-            </SectionContainer> */}
+            </SectionContainer>
         </DefaultLayout>
     )
 };

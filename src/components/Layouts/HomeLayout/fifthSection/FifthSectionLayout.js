@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Border, Container } from '../../../common/Container';
+import { Container, RwdBorderLine } from '../../../common/Container';
 import Card from './Card';
 import Fifth1 from '../../../images/Fifth1.png';
 import Fifth2 from '../../../images/Fifth2.png';
@@ -72,7 +72,7 @@ const CardsLayoutContainer = styled.div`
     }
 `;
 
-const RwdBorder = styled(Border)`
+const RwdBorder = styled(RwdBorderLine)`
     display: none;
     @media screen and (max-width: 800px) {
         /* border: 2px solid green; */
