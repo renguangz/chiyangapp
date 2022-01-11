@@ -16,7 +16,6 @@ const SectionContainer = styled.div`
         z-index: 20;
         background-color: #F5F2E8;
         height: 714px;
-        /* height: 900px; */
     }
 `;
 
