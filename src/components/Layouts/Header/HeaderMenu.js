@@ -23,6 +23,7 @@ const CloseButtonContainer = styled.div`
 const ButtonClose = styled.img`
     width: 30px;
     height: 30px;
+    cursor: pointer;
 `;
 
 const SearchContainer = styled.div`

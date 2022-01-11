@@ -34,9 +34,9 @@ const CookieContainer = styled.div`
 const HeaderMenuBgc = styled.div`
     background: ${Colors.latteBgc};
     display: ${props => props.display};
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 200;
@@ -50,9 +50,11 @@ const DefaultLayout = ({ children }) => {
     useEffect(() => {
         if (headerMenuDisplay) {
             document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
         }
         return () => {
-                document.body.style.overflow = 'scroll'
+            document.body.style.overflow = 'auto';
         }
     }, [headerMenuDisplay])
 
