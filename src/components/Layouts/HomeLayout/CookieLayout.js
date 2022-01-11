@@ -71,6 +71,7 @@ const StyledBtn = styled.button`
     height: 50px;
     border: 2px solid #F5F2E8;
     background-color: #AC9B88;
+    cursor: pointer;
     @media screen and (max-width: 800px) {
         /* border: 2px solid red; */
         /* display: none; */
