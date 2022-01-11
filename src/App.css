@@ -13,6 +13,11 @@ body {
 	overflow: auto;
 }
 
+.focusCircleButton.focusCircleButton {
+  opacity: 1;
+  cursor: auto;
+}
+
 .sixthButtonClick {
   color: #ffffff;
   background: #000000;

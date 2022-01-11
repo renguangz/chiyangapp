@@ -23,12 +23,12 @@ const SectionContainer = styled.div`
 const HomePage = () => {
     return (
         <DefaultLayout>
-            {/* <SectionContainer height={800}>
+            <SectionContainer height={800}>
                 <CarouselLayout />
-            </SectionContainer> */}
-            {/* <SectionContainer height={630}>
+            </SectionContainer>
+            <SectionContainer height={630}>
                 <SecondSectionLayout />
-            </SectionContainer> */}
+            </SectionContainer>
             <SectionContainer height={1044} rwdHeight={1952}>
                 <ThirdSectionLayout />
             </SectionContainer>
