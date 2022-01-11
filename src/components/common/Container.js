@@ -8,6 +8,8 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* max-width: 1200px; */
+    /* margin: 0 auto; */
     @media screen and (max-width: 800px) {
         /* border: 2px solid green; */
         margin: 0 30px;

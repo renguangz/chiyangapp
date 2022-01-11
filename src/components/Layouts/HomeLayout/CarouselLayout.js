@@ -52,7 +52,6 @@ const RwdPlayButton = styled.div`
         width: 60px;
         height: 60px;
         position: absolute;
-        /* top: 290px; */
         left: 50vw;
         transform: translate(-50%, 290px);
         z-index: 20;
@@ -67,7 +66,7 @@ const ControlButtonsContainer = styled.div`
     bottom: 0;
     @media screen and (max-width: 800px) {
         /* border: 2px solid pink; */
-        transform: translateY(-200px)
+        transform: translateY(-120px);
     }
 `;
 
