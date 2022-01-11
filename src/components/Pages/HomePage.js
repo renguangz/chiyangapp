@@ -23,10 +23,10 @@ const SectionContainer = styled.div`
 const HomePage = () => {
     return (
         <DefaultLayout>
-            <SectionContainer height={800}>
+            <SectionContainer height={800} rwdHeight={580}>
                 <CarouselLayout />
             </SectionContainer>
-            <SectionContainer height={630}>
+            <SectionContainer height={630} rwdHeight={714} rwdMarginTop={-108}>
                 <SecondSectionLayout />
             </SectionContainer>
             <SectionContainer height={1044} rwdHeight={1952}>

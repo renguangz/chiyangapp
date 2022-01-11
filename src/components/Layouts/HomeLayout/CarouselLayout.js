@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Carousel1 from '../../images/Carousel1.png';
 import Carousel2 from '../../images/Carousel2.jpg';
 import Six4 from '../../images/Six4.jpeg';
+import PlayButton from '../../images/PlayButton.png';
 import { SwapLeftOutlined, SwapRightOutlined } from '@ant-design/icons/lib/icons';
 import '../../../App.css';
 
@@ -10,6 +11,10 @@ const CarouselSectionPart = styled.div`
     width: 100vw;
     height: 800px;
     overflow: hidden;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        height: 580px;
+    }
 `;
 
 const CarouselContainer = styled.div`
@@ -19,12 +24,39 @@ const CarouselContainer = styled.div`
     display: flex;
     transform: ${props => `translateX(-${props.translateX}vw)`};
     transition: transform .2s;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        height: 580px;
+    }
 `;
 
 const CarouselImg = styled.img`
     /* border: 2px solid green; */
     width: 100vw;
     height: 800px;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        height: 580px;
+    }
+`;
+
+const RwdPlayButton = styled.div`
+    display: none;
+    background-image: url(${PlayButton});
+    background-position: center;
+    background-size: cover;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        border-radius: 50%;
+        display: block;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        /* top: 290px; */
+        left: 50vw;
+        transform: translate(-50%, 290px);
+        z-index: 20;
+    }
 `;
 
 const ControlButtonsContainer = styled.div`
@@ -33,6 +65,10 @@ const ControlButtonsContainer = styled.div`
     height: 140px;
     position: absolute;
     bottom: 0;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid pink; */
+        transform: translateY(-200px)
+    }
 `;
 
 const LeftRightButtonContainer = styled.div`
@@ -40,6 +76,10 @@ const LeftRightButtonContainer = styled.div`
     flex: 1;
     height: 90px;
     margin: 0 40px;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        display: none;
+    }
 `;
 
 const LeftButton = styled.button`
@@ -113,6 +153,9 @@ const CarouselLayout = () => {
                             alt='carousel'
                         />
                     ))
+                }
+                {
+                    dataIndex === 0 ? <RwdPlayButton /> : null
                 }
             </CarouselContainer>
             <ControlButtonsContainer>

@@ -4,17 +4,25 @@ import { Container } from "../../common/Container";
 
 const SectionContainer = styled.div`
     /* background-color: pink; */
-    margin-top: 164px;
-    margin-bottom: 170px;
     width: 100%;
     height: 294px;
     flex: 1;
     margin: 170px auto;
+    margin-top: 164px;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        max-width: 310px;
+        margin: 0 auto;
+        z-index: 20;
+        background-color: #F5F2E8;
+        height: 714px;
+        /* height: 900px; */
+    }
 `;
 
 const SectionTitle = styled.h1`
     /* border: 2px solid green; */
-    font-family: Rufina;
+    font-family: Rufina,Roboto,serif;
     font-size: 50px;
     font-style: normal;
     font-weight: 700;
@@ -22,16 +30,26 @@ const SectionTitle = styled.h1`
     letter-spacing: 0.02em;
     text-align: center;
     margin: 0;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        font-size: 36px;
+        line-height: 40px;
+        margin: 30px 15px;
+    }
 `;
 
 const SectionParaContainer = styled.div`
     /* border: 2px solid green; */
     height: 200px;
     margin-top: 30px;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        margin-top: 0;
+    }
 `;
 
 const SectionPara = styled.p`
-    font-family: Roboto;
+    font-family: Roboto,serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -39,6 +57,12 @@ const SectionPara = styled.p`
     letter-spacing: 0em;
     text-align: center;
     margin: 0;
+    color: #4f4f4f;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        line-height: 30px;
+        font-size: 18px;
+    }
 `;
 
 const SecondSectionLayout = () => {
