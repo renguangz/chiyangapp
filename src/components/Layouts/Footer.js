@@ -33,6 +33,11 @@ const FooterContainer = styled.div`
     @media screen and (max-width: 800px) {
         /* border: 2px solid orange; */
         height: 470px;
+        margin-top: 85px;
+        &:after {
+            content: 'Ad. by BOFT';
+            transform: translate(28px, 400px) rotate(-90deg);
+        }
     }
 `;
 

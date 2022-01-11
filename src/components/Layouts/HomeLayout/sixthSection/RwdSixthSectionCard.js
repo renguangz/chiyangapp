@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Six1 from '../../../images/Six1.png';
 import PhoneIcon from '../../../images/PhoneIcon.png';
 import PrinterIcon from '../../../images/PrinterIcon.png';
 import MailIcon from '../../../images/MailIcon.png';

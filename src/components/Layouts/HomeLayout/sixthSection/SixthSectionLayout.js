@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Container, RwdBorderLine } from "../../common/Container";
-import Six1 from '../../images/Six1.png';
-import Six2 from '../../images/Six2.jpeg';
-import Six3 from '../../images/Six3.jpeg';
-import Six4 from '../../images/Six4.jpeg';
-import PhoneIcon from '../../images/PhoneIcon.png';
-import PrinterIcon from '../../images/PrinterIcon.png';
-import MailIcon from '../../images/MailIcon.png';
-import LocationIcon from '../../images/LocationIcon.png';
+import { Container, RwdBorderLine } from "../../../common/Container";
+import Six1 from '../../../images/Six1.png';
+import Six2 from '../../../images/Six2.jpeg';
+import Six3 from '../../../images/Six3.jpeg';
+import Six4 from '../../../images/Six4.jpeg';
+import PhoneIcon from '../../../images/PhoneIcon.png';
+import PrinterIcon from '../../../images/PrinterIcon.png';
+import MailIcon from '../../../images/MailIcon.png';
+import LocationIcon from '../../../images/LocationIcon.png';
 import { SwapRightOutlined } from "@ant-design/icons/lib/icons";
-import '../../../App.css';
-import RwdSixthSectionCard from "./sixthSection/RwdSixthSectionCard";
+import '../../../../App.css';
+import RwdSixthSectionCard from "./RwdSixthSectionCard";
 
 const SixthSectionContainer = styled.div`
     /* border: 2px solid green; */
@@ -73,7 +73,7 @@ const InfoContainer = styled.div`
     @media screen and (max-width: 800px) {
         /* border: 2px solid yellow; */
         margin-left: 0;
-        height: 2790px;
+        height: 2808px;
     }
 `;
 

@@ -6,8 +6,7 @@ import SecondSectionLayout from '../Layouts/HomeLayout/SecondSectionLayout';
 import ThirdSectionLayout from '../Layouts/HomeLayout/thirdSection/ThirdSectionLayout';
 import FourthSectionLayout from '../Layouts/HomeLayout/fourthSection/FourthSectionLayout';
 import FifthSectionLayout from '../Layouts/HomeLayout/fifthSection/FifthSectionLayout';
-// import SixSectionLayout from '../Layouts/HomeLayout/sixthSection/SixthSectionLayout';
-import SixSectionLayout from '../Layouts/HomeLayout/SixthSectionLayout';
+import SixSectionLayout from '../Layouts/HomeLayout/sixthSection/SixthSectionLayout';
 
 const SectionContainer = styled.div`
     /* border: 2px solid green; */
