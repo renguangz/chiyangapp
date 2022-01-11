@@ -65,6 +65,7 @@ const ControlButtonsContainer = styled.div`
     position: absolute;
     /* bottom: 0; */
     top: 0;
+    transform: translateY(660px);
     @media screen and (max-width: 800px) {
         /* border: 2px solid pink; */
         transform: translateY(440px);
