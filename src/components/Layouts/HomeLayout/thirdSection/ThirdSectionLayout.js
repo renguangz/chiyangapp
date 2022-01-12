@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Container } from "../../../common/Container";
+import { Container, RwdBorderLine } from "../../../common/Container";
 import ThirdSectionCard from "./ThirdSectionCard";
 import Card1 from '../../../images/Card1.png';
 import Card2 from '../../../images/Card2.png';
@@ -12,7 +12,7 @@ const LayoutContainer = styled.div`
     flex: 1;
     width: 100%;
     @media screen and (max-width: 800px) {
-        /* border: 2px solid purple; */
+        border: 2px solid purple;
         height: 1952px;
     }
 `;
@@ -26,7 +26,7 @@ const TopItemContainer = styled.div`
     display: flex;
     justify-content: right;
     @media screen and (max-width: 800px) {
-        /* border: 2px solid pink; */
+        border: 2px solid pink;
         width: 100%;
         height: 240px;
 
@@ -40,8 +40,16 @@ const TitleBorder = styled.div`
     margin-top: 140px;
     @media screen and (max-width: 800px) {
         /* border: 2px solid green; */
-        width: 320px;
-        margin-top: 112px;
+        /* width: 320px;
+        margin-top: 112px; */
+        display: none;
+        background: #000000;
+
+        width: 55%;
+        margin-top: -44px;
+        margin-bottom: 0;
+        position: absolute;
+        right: 0;
     }
 `;
 
@@ -101,6 +109,17 @@ const StyledContainer = styled(Container)`
     }
 `;
 
+const StyledRwdBorder = styled(RwdBorderLine)`
+    display: none;
+    background: #fff;
+    @media screen and (max-width: 800px) {
+        /* border: 2px solid green; */
+        display: block;
+        /* transform: translateY(113px); */
+        margin-top: 114px;
+    }
+`;
+
 const cardsData = [
     { src: Card1, cardTitle: 'Sustainable', cardPara: 'Energy-saving and carbon reduction, Waste recycling , Environmental friendly. Targeting Zero Waste: Realizing a Cradle-to-Cradle Green Economy. The Green cycle will turn the perpetual machine of sustainable development.' },
     { src: Card2, cardTitle: 'Innovation', cardPara: 'We are willing to try new materials, new machines, and new practices. Our innovation may not be revolutionary, but it is definitely a step-by-step process.' },
@@ -113,6 +132,7 @@ const ThirdSectionLayout = () => {
             <TopItemContainer>
                 <TitleBorder />
             </TopItemContainer>
+            <StyledRwdBorder />
             <StyledContainer>
                 <ItemTitleContainer>
                     <ItemTitle>WHAT WE DO</ItemTitle>
