@@ -12,7 +12,7 @@ const LayoutContainer = styled.div`
     flex: 1;
     width: 100%;
     @media screen and (max-width: 800px) {
-        border: 2px solid purple;
+        /* border: 2px solid purple; */
         height: 1952px;
     }
 `;
@@ -26,7 +26,7 @@ const TopItemContainer = styled.div`
     display: flex;
     justify-content: right;
     @media screen and (max-width: 800px) {
-        border: 2px solid pink;
+        /* border: 2px solid pink; */
         width: 100%;
         height: 240px;
 
@@ -115,7 +115,7 @@ const StyledRwdBorder = styled(RwdBorderLine)`
     @media screen and (max-width: 800px) {
         /* border: 2px solid green; */
         display: block;
-        /* transform: translateY(113px); */
+        /* transform: translateY(114px); */
         margin-top: 114px;
     }
 `;
