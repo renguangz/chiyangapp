@@ -34,22 +34,15 @@ const TopItemContainer = styled.div`
 `;
 
 const TitleBorder = styled.div`
+    /* border: 2px solid pink; */
     width: 800px;
+    width: 36vw;
     height: 1px;
     background-color: #F5F2E8;
     margin-top: 140px;
+    display: block;
     @media screen and (max-width: 800px) {
-        /* border: 2px solid green; */
-        /* width: 320px;
-        margin-top: 112px; */
         display: none;
-        background: #000000;
-
-        width: 55%;
-        margin-top: -44px;
-        margin-bottom: 0;
-        position: absolute;
-        right: 0;
     }
 `;
 
