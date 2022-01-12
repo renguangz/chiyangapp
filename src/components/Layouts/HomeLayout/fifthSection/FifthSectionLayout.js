@@ -61,7 +61,7 @@ const PhotoCardsContainer = styled.div`
 
 const CardsLayoutContainer = styled.div`
     /* border: 2px solid red; */
-    margin: 40px 30px;
+    margin: 40px 26px;
     margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
