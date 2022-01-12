@@ -39,6 +39,28 @@ const ParaText = styled.p`
         /* border: 2px solid red; */
         text-align: center;
         line-height: 30px;
+        font-size: 18px;
+        margin: 0;
+    }
+    @media screen and (max-width: 610px) {
+        /* border: 2px solid red; */
+        text-align: center;
+        line-height: 28px;
+        font-size: 18px;
+        margin: 0;
+    }
+    @media screen and (max-width: 540px) {
+        /* border: 2px solid red; */
+        text-align: center;
+        line-height: 24px;
+        font-size: 18px;
+        margin: 0;
+    }
+    @media screen and (max-width: 440px) {
+        /* border: 2px solid red; */
+        text-align: center;
+        line-height: 24px;
+        font-size: 12px;
         margin: 0;
     }
 `;
